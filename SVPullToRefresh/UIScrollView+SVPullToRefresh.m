@@ -174,7 +174,7 @@ static char UIScrollViewPullToRefreshView;
     if(self = [super initWithFrame:frame]) {
         
         // default styling values
-        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleMedium;
         self.textColor = [UIColor darkGrayColor];
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         self.state = SVPullToRefreshStateStopped;
@@ -451,7 +451,7 @@ static char UIScrollViewPullToRefreshView;
 
 - (UIActivityIndicatorView *)activityIndicatorView {
     if(!_activityIndicatorView) {
-        _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleMedium];
         _activityIndicatorView.hidesWhenStopped = YES;
         [self addSubview:_activityIndicatorView];
     }
